@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 import rospy
-from rosgraph_msgs.msg import Clock
+from visualization_msgs.msg import MarkerArray
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.data)
+    rospy.loginfo(rospy.get_caller_id() + 'I heard %s' + str(data.data))
 
 
 def listener():
