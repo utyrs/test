@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import rospy
-from rosgraph_msgs import Clock
+from rosgraph_msgs.msg import Clock
 
 def callback(data):
     rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.data)
