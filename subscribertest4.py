@@ -51,7 +51,7 @@ def listener():
     # run simultaneously.
     rospy.init_node('listener', anonymous=True)
 
-    rospy.Subscriber('/visualization/planning/planner_visualization', MarkerArray, callback)
+    rospy.Subscriber('planner_visualization', MarkerArray, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
