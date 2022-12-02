@@ -8,7 +8,7 @@ from geometry_msgs.msg import Point
 
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + 'I heard' + str(data.markers[1].pose.position.x))
+    rospy.loginfo(rospy.get_caller_id() + 'I heard' + str(data.markers))
 
 
 def listener():
