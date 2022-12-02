@@ -9,7 +9,7 @@ def callback(data):
 
 def listener():
     rospy.init_node('listener', anonymous=True)
-    rospy.Subscriber('planner_visualization', MarkerArray, callback)
+    rospy.Subscriber('/visualization/planning/planner_visualization', MarkerArray, callback)
     rospy.spin
 
 
